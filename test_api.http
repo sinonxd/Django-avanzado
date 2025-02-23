@@ -1,0 +1,50 @@
+### Crear una nueva clase
+POST http://127.0.0.1:8000/api/clases/
+Content-Type: application/json
+
+{
+  "id":17,
+  "nombre": "Pilates",
+  "descripcion": "Ejercicios de pilates",
+  "cupo_maximo": 15,
+  "fecha_hora": "2025-02-22T10:00:00Z"
+}
+
+### Obtener todas las clases
+GET http://127.0.0.1:8000/api/clases/
+
+
+### Obtener una clase específica (cambia el ID según la base de datos)
+GET http://127.0.0.1:8000/api/clases/15/
+
+### Actualizar una clase (cambia el ID según la base de datos)
+PUT http://127.0.0.1:8000/api/clases/15/
+Content-Type: application/json
+
+{
+  "nombre": "Pilates Avanzado",
+  "descripcion": "Clase avanzada de pilates",
+  "cupo_maximo": 20,
+  "fecha_hora": "2025-02-22T10:30:00Z"
+}
+
+### Eliminar una clase (cambia el ID según la base de datos)
+DELETE http://127.0.0.1:8000/api/clases/17/
+
+### Crear una nueva reserva
+POST http://127.0.0.1:8000/api/reservas/
+Content-Type: application/json
+
+{
+  "usuario": 1,
+  "clase": 16
+}
+
+### Obtener todas las reservas
+GET http://127.0.0.1:8000/api/reservas/
+
+### Obtener una reserva específica
+GET http://127.0.0.1:8000/api/reservas/9/
+
+### Eliminar una reserva
+DELETE http://127.0.0.1:8000/api/reservas/9/
