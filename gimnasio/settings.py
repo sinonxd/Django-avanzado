@@ -77,10 +77,10 @@ WSGI_APPLICATION = "gimnasio.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "gym_db",  # Cambia BASE_DIR / "db.mysql" por una cadena
+        "NAME": "gym_db",  
         "USER": "root",  # Reemplaza con tu usuario de MySQL
         "PASSWORD": "Konomisuzuki123",  # Reemplaza con tu contraseña de MySQL
-        "HOST": "localhost",  # O la dirección de tu servidor MySQL
+        "HOST": "localhost",  
         "PORT": "3306",  # Puerto predeterminado de MySQL
     }
 }
