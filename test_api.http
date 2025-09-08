@@ -18,7 +18,7 @@ GET http://127.0.0.1:8000/api/clases/
 GET http://127.0.0.1:8000/api/clases/15/
 
 ### Actualizar una clase (cambia el ID según la base de datos)
-PUT http://127.0.0.1:8000/api/clases/15/
+PUT http://127.0.0.1:8000/api/clases/5/
 Content-Type: application/json
 
 {
@@ -37,7 +37,7 @@ Content-Type: application/json
 
 {
   "usuario": 1,
-  "clase": 16
+  "clase": 17
 }
 
 ### Obtener todas las reservas
@@ -47,4 +47,4 @@ GET http://127.0.0.1:8000/api/reservas/
 GET http://127.0.0.1:8000/api/reservas/9/
 
 ### Eliminar una reserva
-DELETE http://127.0.0.1:8000/api/reservas/9/
+DELETE http://127.0.0.1:8000/api/reservas/14/
